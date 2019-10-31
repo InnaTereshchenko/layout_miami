@@ -29,7 +29,9 @@ a {
   outline: #2f80ed solid 2px; }
 
 .header {
-  height: 765px;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
@@ -49,14 +51,15 @@ a {
     top: 35px;
     left: calc(50% - 57.5px);
     color: white; }
-  .header__phone {
-    margin: 0 82px; }
   .header__phone, .header__action {
     position: relative;
-    top: 47px; }
-  .header__link {
-    color: white;
-    text-decoration: none;
+    top: 47px;
+    color: white; }
+  .header__phone {
+    margin: 0 82px; }
+  .header__action {
+    display: block;
+    height: 19px;
     border-bottom: 1px dashed;
     text-transform: uppercase;
     -webkit-transition: color 0.2s;
